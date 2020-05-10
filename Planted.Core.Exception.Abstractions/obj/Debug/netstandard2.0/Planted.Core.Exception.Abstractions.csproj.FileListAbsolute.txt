@@ -1,7 +1,0 @@
-C:\Work\c#\Planted.Core.Exception.Abstractions\bin\Debug\netstandard2.0\Planted.Core.Exception.Abstractions.deps.json
-C:\Work\c#\Planted.Core.Exception.Abstractions\bin\Debug\netstandard2.0\Planted.Core.Exception.Abstractions.dll
-C:\Work\c#\Planted.Core.Exception.Abstractions\bin\Debug\netstandard2.0\Planted.Core.Exception.Abstractions.pdb
-C:\Work\c#\Planted.Core.Exception.Abstractions\obj\Debug\netstandard2.0\Planted.Core.Exception.Abstractions.AssemblyInfoInputs.cache
-C:\Work\c#\Planted.Core.Exception.Abstractions\obj\Debug\netstandard2.0\Planted.Core.Exception.Abstractions.AssemblyInfo.cs
-C:\Work\c#\Planted.Core.Exception.Abstractions\obj\Debug\netstandard2.0\Planted.Core.Exception.Abstractions.dll
-C:\Work\c#\Planted.Core.Exception.Abstractions\obj\Debug\netstandard2.0\Planted.Core.Exception.Abstractions.pdb

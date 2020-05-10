@@ -1,7 +1,0 @@
-C:\Work\c#\Planted.Core.Storage\obj\Debug\netstandard2.0\Planted.Core.Storage.AssemblyInfoInputs.cache
-C:\Work\c#\Planted.Core.Storage\obj\Debug\netstandard2.0\Planted.Core.Storage.AssemblyInfo.cs
-C:\Work\c#\Planted.Core.Storage\bin\Debug\netstandard2.0\Planted.Core.Storage.deps.json
-C:\Work\c#\Planted.Core.Storage\bin\Debug\netstandard2.0\Planted.Core.Storage.dll
-C:\Work\c#\Planted.Core.Storage\bin\Debug\netstandard2.0\Planted.Core.Storage.pdb
-C:\Work\c#\Planted.Core.Storage\obj\Debug\netstandard2.0\Planted.Core.Storage.dll
-C:\Work\c#\Planted.Core.Storage\obj\Debug\netstandard2.0\Planted.Core.Storage.pdb

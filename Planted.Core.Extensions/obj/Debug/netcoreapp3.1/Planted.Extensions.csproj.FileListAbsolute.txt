@@ -1,8 +1,0 @@
-C:\Work\c#\Planted.Extensions\bin\Debug\netcoreapp3.1\Planted.Extensions.deps.json
-C:\Work\c#\Planted.Extensions\bin\Debug\netcoreapp3.1\Planted.Extensions.dll
-C:\Work\c#\Planted.Extensions\bin\Debug\netcoreapp3.1\Planted.Extensions.pdb
-C:\Work\c#\Planted.Extensions\obj\Debug\netcoreapp3.1\Planted.Extensions.csprojAssemblyReference.cache
-C:\Work\c#\Planted.Extensions\obj\Debug\netcoreapp3.1\Planted.Extensions.AssemblyInfoInputs.cache
-C:\Work\c#\Planted.Extensions\obj\Debug\netcoreapp3.1\Planted.Extensions.AssemblyInfo.cs
-C:\Work\c#\Planted.Extensions\obj\Debug\netcoreapp3.1\Planted.Extensions.dll
-C:\Work\c#\Planted.Extensions\obj\Debug\netcoreapp3.1\Planted.Extensions.pdb
