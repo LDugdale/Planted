@@ -1,0 +1,30 @@
+
+.single-page-background .single-page .content .select-box-wrapper .checkbox.checked .nickname {
+    color: #fff;
+}
+
+.single-page-background .single-page .content .select-box-wrapper .checkbox.checked .name {
+    color: #ffffff9c;
+}
+
+.single-page-background .single-page .content .select-box-wrapper .checkbox label {
+    display: flex;
+    align-items: center;
+}
+
+.single-page-background .single-page .content .select-box-wrapper .checkbox .label-wrapper {
+    float: left;
+    padding: 0px 15px;
+}
+
+
+.single-page-background .single-page .content .select-box-wrapper .checkbox label span {
+    clear: both;
+    float: left;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.single-page-background .single-page .content .select-box-wrapper .checkbox .nickname {
+    color: var(--primary-color);
+}

@@ -1,0 +1,19 @@
+
+:root {
+    /* COLORS */
+        /* main colors */
+        --primary-color: #65a15a;
+        --secondary-color: #828DAB;
+        /* background colors */
+        --primary-bg-color: #FAF7F2;
+        --opaque-bg-color: #ffffffb0;
+        /* black and white */
+        --black: #5a6175;
+        --white: white;
+        /* line colors */
+        --line-separator-color: #c5c5c5;
+
+    /* SIZE, PADDING, MARGIN */
+        /* padding */
+        --primary-padding: 15px;
+}

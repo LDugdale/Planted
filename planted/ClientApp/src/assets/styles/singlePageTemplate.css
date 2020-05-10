@@ -1,0 +1,112 @@
+.single-page-background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-bg-color);
+    transition: all 300ms ease;
+    z-index: 200; 
+}
+
+.single-page-background-enter {
+    top: 100vh;
+
+}
+.single-page-background-enter-active {
+    top: 0vh;
+}
+
+.single-page-background-done {
+    top: 0vh;
+}
+
+.single-page-background-exit {
+    left: 0vw;
+}
+.single-page-background-exit-active {
+    left: 100vw;
+}
+
+
+.single-page-background .single-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.single-page-background .single-page .content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-page-background .single-page .content-wrapper .content {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+}
+
+.single-page-background .single-page .single-page-header {
+    position: relative;
+    width: 100%;
+    background: url('../images/singlePageHero2.svg') top no-repeat;
+    background-size: 100% 100%;
+}
+
+.single-page-background .single-page .single-page-header svg {
+    fill: var(--primary-color);
+    width: 100%;
+    height: 300px;
+}
+
+.single-page-background .single-page .single-page-header .header-text {
+    margin: 0 0 24vw 0;
+}
+
+.single-page-background .single-page .single-page-header .header-text h1 {
+    padding: 0 30px;
+    color: var(--white);
+}
+
+.single-page-background .single-page .single-page-header .icon {
+    opacity: 0.7;
+    width: 8vw;
+    height: 8vw;
+    margin: 2vw;
+}
+
+.single-page-background .single-page .single-page-header .icon .icon-wrapper {
+    width: 8vw;
+    height: 8vw;
+    border: 3px solid var(--white);
+    border-radius: 100%;
+    padding: 1vw;
+}
+
+
+.single-page-background .single-page .single-page-header .icon svg {
+    width: 8vw;
+    height: 8vw;
+    fill: var(--white);
+}
+
+.single-page-background .single-page .content .select-box-wrapper {
+    flex: 1 1 100%;
+}
+
+.single-page-background .single-page .content .select-box-wrapper .results {
+    height: 100%;
+    overflow: scroll;
+}
+
+.single-page-background .single-page .content .select-box-wrapper .checkbox {
+    padding: 10px;
+    border-bottom: 1px solid var(--line-separator-color);
+    transition: background-color 0.3s ease;
+}
+
+.single-page-background .single-page .content .select-box-wrapper .checkbox.checked {
+    background-color: var(--primary-color);
+    color: #fff;
+}

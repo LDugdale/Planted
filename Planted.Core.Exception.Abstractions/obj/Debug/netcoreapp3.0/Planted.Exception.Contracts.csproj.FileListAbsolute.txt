@@ -1,0 +1,8 @@
+C:\Work\c#\Planted.Exception.Contracts\bin\Debug\netcoreapp3.0\Planted.Exception.Contracts.deps.json
+C:\Work\c#\Planted.Exception.Contracts\bin\Debug\netcoreapp3.0\Planted.Exception.Contracts.dll
+C:\Work\c#\Planted.Exception.Contracts\bin\Debug\netcoreapp3.0\Planted.Exception.Contracts.pdb
+C:\Work\c#\Planted.Exception.Contracts\obj\Debug\netcoreapp3.0\Planted.Exception.Contracts.csprojAssemblyReference.cache
+C:\Work\c#\Planted.Exception.Contracts\obj\Debug\netcoreapp3.0\Planted.Exception.Contracts.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.Exception.Contracts\obj\Debug\netcoreapp3.0\Planted.Exception.Contracts.AssemblyInfo.cs
+C:\Work\c#\Planted.Exception.Contracts\obj\Debug\netcoreapp3.0\Planted.Exception.Contracts.dll
+C:\Work\c#\Planted.Exception.Contracts\obj\Debug\netcoreapp3.0\Planted.Exception.Contracts.pdb

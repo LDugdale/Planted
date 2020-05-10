@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Planted.Core.Storage.Abstractions\Planted.Core.Storage.Abstractions.csproj" />
+    <ProjectReference Include="..\Planted.Plant.Data.Abstractions\Planted.Plant.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\Planted.User.Abstractions\Planted.User.Abstractions.csproj" />
+    <ProjectReference Include="..\Planted.UserPlants.Data.Abstractions\Planted.UserPlants.Data.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

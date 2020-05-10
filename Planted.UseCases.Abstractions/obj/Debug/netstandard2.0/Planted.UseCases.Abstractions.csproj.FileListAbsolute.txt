@@ -1,0 +1,17 @@
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.UseCases.Abstractions.deps.json
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.UseCases.Abstractions.dll
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.UseCases.Abstractions.pdb
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.Plant.Data.Abstractions.dll
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.User.Abstractions.dll
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.User.Data.Abstractions.dll
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.dll
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.Plant.Data.Abstractions.pdb
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.User.Abstractions.pdb
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.pdb
+C:\Work\c#\Planted.UseCases.Abstractions\bin\Debug\netstandard2.0\Planted.User.Data.Abstractions.pdb
+C:\Work\c#\Planted.UseCases.Abstractions\obj\Debug\netstandard2.0\Planted.UseCases.Abstractions.csprojAssemblyReference.cache
+C:\Work\c#\Planted.UseCases.Abstractions\obj\Debug\netstandard2.0\Planted.UseCases.Abstractions.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.UseCases.Abstractions\obj\Debug\netstandard2.0\Planted.UseCases.Abstractions.AssemblyInfo.cs
+C:\Work\c#\Planted.UseCases.Abstractions\obj\Debug\netstandard2.0\Planted.UseCases.Abstractions.csproj.CopyComplete
+C:\Work\c#\Planted.UseCases.Abstractions\obj\Debug\netstandard2.0\Planted.UseCases.Abstractions.dll
+C:\Work\c#\Planted.UseCases.Abstractions\obj\Debug\netstandard2.0\Planted.UseCases.Abstractions.pdb

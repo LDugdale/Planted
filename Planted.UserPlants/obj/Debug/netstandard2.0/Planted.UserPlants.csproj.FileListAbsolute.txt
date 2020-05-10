@@ -1,0 +1,13 @@
+C:\Work\c#\Planted.UserPlants\bin\Debug\netstandard2.0\Planted.UserPlants.deps.json
+C:\Work\c#\Planted.UserPlants\bin\Debug\netstandard2.0\Planted.UserPlants.dll
+C:\Work\c#\Planted.UserPlants\bin\Debug\netstandard2.0\Planted.UserPlants.pdb
+C:\Work\c#\Planted.UserPlants\bin\Debug\netstandard2.0\Planted.UserPlants.Abstractions.dll
+C:\Work\c#\Planted.UserPlants\bin\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.dll
+C:\Work\c#\Planted.UserPlants\bin\Debug\netstandard2.0\Planted.UserPlants.Abstractions.pdb
+C:\Work\c#\Planted.UserPlants\bin\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.pdb
+C:\Work\c#\Planted.UserPlants\obj\Debug\netstandard2.0\Planted.UserPlants.csprojAssemblyReference.cache
+C:\Work\c#\Planted.UserPlants\obj\Debug\netstandard2.0\Planted.UserPlants.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.UserPlants\obj\Debug\netstandard2.0\Planted.UserPlants.AssemblyInfo.cs
+C:\Work\c#\Planted.UserPlants\obj\Debug\netstandard2.0\Planted.UserPlants.csproj.CopyComplete
+C:\Work\c#\Planted.UserPlants\obj\Debug\netstandard2.0\Planted.UserPlants.dll
+C:\Work\c#\Planted.UserPlants\obj\Debug\netstandard2.0\Planted.UserPlants.pdb

@@ -1,0 +1,7 @@
+C:\Work\c#\Planted.UserPlants.Data.Abstractions\bin\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.deps.json
+C:\Work\c#\Planted.UserPlants.Data.Abstractions\bin\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.dll
+C:\Work\c#\Planted.UserPlants.Data.Abstractions\obj\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.UserPlants.Data.Abstractions\obj\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.AssemblyInfo.cs
+C:\Work\c#\Planted.UserPlants.Data.Abstractions\bin\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.pdb
+C:\Work\c#\Planted.UserPlants.Data.Abstractions\obj\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.dll
+C:\Work\c#\Planted.UserPlants.Data.Abstractions\obj\Debug\netstandard2.0\Planted.UserPlants.Data.Abstractions.pdb

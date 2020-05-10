@@ -1,0 +1,11 @@
+C:\Work\c#\Planted.Core.Security\bin\Debug\netstandard2.0\Planted.Core.Security.Abstractions.dll
+C:\Work\c#\Planted.Core.Security\obj\Debug\netstandard2.0\Planted.Core.Security.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.Core.Security\obj\Debug\netstandard2.0\Planted.Core.Security.AssemblyInfo.cs
+C:\Work\c#\Planted.Core.Security\obj\Debug\netstandard2.0\Planted.Core.Security.csprojAssemblyReference.cache
+C:\Work\c#\Planted.Core.Security\bin\Debug\netstandard2.0\Planted.Core.Security.deps.json
+C:\Work\c#\Planted.Core.Security\bin\Debug\netstandard2.0\Planted.Core.Security.dll
+C:\Work\c#\Planted.Core.Security\bin\Debug\netstandard2.0\Planted.Core.Security.pdb
+C:\Work\c#\Planted.Core.Security\bin\Debug\netstandard2.0\Planted.Core.Security.Abstractions.pdb
+C:\Work\c#\Planted.Core.Security\obj\Debug\netstandard2.0\Planted.Core.Security.csproj.CopyComplete
+C:\Work\c#\Planted.Core.Security\obj\Debug\netstandard2.0\Planted.Core.Security.dll
+C:\Work\c#\Planted.Core.Security\obj\Debug\netstandard2.0\Planted.Core.Security.pdb

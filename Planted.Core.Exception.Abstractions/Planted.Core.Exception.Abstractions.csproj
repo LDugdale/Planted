@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Planted.Core.Exception.Abstractions</AssemblyName>
+    <RootNamespace>Planted.Core.Exception.Abstractions</RootNamespace>
+  </PropertyGroup>
+
+</Project>

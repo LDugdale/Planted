@@ -1,0 +1,131 @@
+.footer {
+  background-color: var(--white);
+  border-top: 1px solid var(--line-separator-color);
+}
+
+.tabs-wrapper{
+  height: 41px;
+  width: 100%;
+  position: relative;
+}
+
+.tabs {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+}
+
+.tabs .tab {
+  display: inline-block;
+  cursor: pointer;
+  width: calc(100% / 3);
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+.tabs .tab:hover, .tabs .tab-active {
+  color: white;
+}
+
+.tabs .underline {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.tabs .tab .item {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  z-index: 10;
+}
+
+.tabs .plants-tab .mask {
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  z-index: 10;
+}
+
+.footer .tabs .tab-active.plants-tab .half-circle {
+  height: 40px;
+  width: 80px;
+  top: -70%;
+}
+
+.tabs .plants-tab .half-circle {
+  width: 60px;
+  height: 30px;
+  top: -40%;
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  border: 1px solid var(--line-separator-color);
+  border-bottom: 0;
+  transform: translateX(50%);
+  transition: all 0.3s;
+  right: 50%;
+  position: absolute;
+  background-color: #fff;
+}
+
+.tabs .tab .item .icon  {
+  text-align: center;
+  padding: 5px;
+}
+
+.tabs .tab .plants .icon .icon-wrapper {
+  display: inline-block;
+  padding: 15px 15px 0px 15px;
+  border-radius: 100% 100% 0% 100%;
+  background-color: var(--white);
+}
+
+.tabs .tab .plants .icon .icon-wrapper svg {
+  height: 30px;
+}
+
+.tabs .tab .item .icon svg {
+  height: 25px;
+  transition: all 0.3s;
+  fill: var(--black);
+}
+
+.tabs .tab-active .plants .icon .icon-wrapper svg {
+  height: 45px;
+}
+
+.footer-menu {
+  position: absolute;
+  width: 60px;
+  height: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 165px;
+}
+
+.footer-menu .footer-menu-icon {
+  margin-bottom: 10px;
+}
+
+.footer-menu .footer-menu-icon .icon-wrapper {
+  background-color: var(--white);
+  border: 1px solid var(--line-separator-color);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.footer-menu-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}

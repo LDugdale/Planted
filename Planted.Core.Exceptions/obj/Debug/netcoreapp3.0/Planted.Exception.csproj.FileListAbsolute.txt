@@ -1,0 +1,8 @@
+C:\Work\c#\Planted.Exception\bin\Debug\netcoreapp3.0\Planted.Exception.deps.json
+C:\Work\c#\Planted.Exception\bin\Debug\netcoreapp3.0\Planted.Exception.dll
+C:\Work\c#\Planted.Exception\bin\Debug\netcoreapp3.0\Planted.Exception.pdb
+C:\Work\c#\Planted.Exception\obj\Debug\netcoreapp3.0\Planted.Exception.csprojAssemblyReference.cache
+C:\Work\c#\Planted.Exception\obj\Debug\netcoreapp3.0\Planted.Exception.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.Exception\obj\Debug\netcoreapp3.0\Planted.Exception.AssemblyInfo.cs
+C:\Work\c#\Planted.Exception\obj\Debug\netcoreapp3.0\Planted.Exception.dll
+C:\Work\c#\Planted.Exception\obj\Debug\netcoreapp3.0\Planted.Exception.pdb

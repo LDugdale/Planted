@@ -1,0 +1,8 @@
+C:\Work\c#\Planted.Core.Extensions\obj\Debug\netcoreapp3.1\Planted.Core.Extensions.csprojAssemblyReference.cache
+C:\Work\c#\Planted.Core.Extensions\obj\Debug\netcoreapp3.1\Planted.Core.Extensions.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.Core.Extensions\obj\Debug\netcoreapp3.1\Planted.Core.Extensions.AssemblyInfo.cs
+C:\Work\c#\Planted.Core.Extensions\bin\Debug\netcoreapp3.1\Planted.Core.Extensions.deps.json
+C:\Work\c#\Planted.Core.Extensions\bin\Debug\netcoreapp3.1\Planted.Core.Extensions.dll
+C:\Work\c#\Planted.Core.Extensions\bin\Debug\netcoreapp3.1\Planted.Core.Extensions.pdb
+C:\Work\c#\Planted.Core.Extensions\obj\Debug\netcoreapp3.1\Planted.Core.Extensions.dll
+C:\Work\c#\Planted.Core.Extensions\obj\Debug\netcoreapp3.1\Planted.Core.Extensions.pdb

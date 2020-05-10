@@ -1,0 +1,77 @@
+.content .plants {
+    /* background-color: var(--primary-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    overflow: scroll; */
+}
+
+.content .plants .plant-wrapper {
+    width: 42%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 3%;
+}
+.content .plants .plant-wrapper a {
+    text-decoration: none;
+}
+
+.content .plants .plant-wrapper .plant-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .plants .plant-wrapper.user-plant {
+    background-color: var(--white);
+    position: relative;
+}
+
+.content .plants .plant-wrapper.user-plant a.plant-link {
+    height: 100%;
+    width: 100%;
+}
+
+.content .plants .plant-wrapper.user-plant .plant-info {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: #5a617529;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.content .plants .plant-wrapper.user-plant .plant-info h3 {
+    color: var(--primary-color);
+}
+
+.content .plants .plant-wrapper.user-plant .plant-info h5 {
+    color: var(--black);
+}
+
+.content .plants .plant-wrapper.user-plant .plant-info h3, .content .plants .plant-wrapper.user-plant .plant-info h5 {
+    margin: 10px;
+}
+
+.content .plants .plant-wrapper.add-plant {
+    border: 3px dashed var(--line-separator-color);
+}
+
+.content .plants .plant-wrapper .plant-content h2 {
+    color: var(--line-separator-color);
+    margin-right: 15px;
+}
+
+.content .plants .plant-wrapper .plant-content .icon {
+    height: 30px;
+    width: 30px;
+}
+
+.content .plants .plant-wrapper .plant-content .icon svg {
+    fill: var(--line-separator-color);
+}
+
+

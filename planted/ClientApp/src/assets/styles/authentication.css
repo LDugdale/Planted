@@ -1,0 +1,84 @@
+.auth-container {
+    height: 100%;
+}
+
+.auth-container .header {
+    background-color: var(--primary-color);    
+    padding: var(--primary-padding);
+    text-align: center;
+    color: var(--white);
+}
+
+.auth-container .auth-content {
+    background-color: var(--white);
+    padding: 65px 30px;
+    position: relative;
+}
+
+.auth-container .auth-content form .input-wrapper {
+    width: 100%;
+}
+
+.auth-container .auth-content form .input-wrapper input {
+    width: 100%;
+    border: 0px;
+    margin-bottom: 25px;
+    padding: 10px 7px 5px 0px;
+    border-bottom: 1px solid var(--line-separator-color);
+}
+
+.auth-container .auth-content form button {
+    color: #ffffffad;
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 15px 0px;
+}
+
+.auth-container .auth-content .forget-password-link {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.auth-container .auth-content .forget-password-link a {
+    text-align: center;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-container .auth-content .auth-separator {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid var(--line-separator-color); 
+    line-height: 0.1em;
+    margin: 50px 0 50px; 
+ } 
+ 
+ .auth-container .auth-content .auth-separator span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ .auth-container .auth-content .sign-up-link {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 15px 0px
+}
+
+.auth-container .auth-content .sign-up-link a {
+    text-align: center;
+    color: #ffffffad;
+    text-decoration: none;
+}
+
+.auth-container .auth-content .sign-in-link {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 15px 0px
+}
+
+.auth-container .auth-content .sign-in-link a {
+    text-align: center;
+    color: #ffffffad;
+    text-decoration: none;
+}

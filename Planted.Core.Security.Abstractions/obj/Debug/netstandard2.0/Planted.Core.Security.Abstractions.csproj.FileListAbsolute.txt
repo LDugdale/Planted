@@ -1,0 +1,7 @@
+C:\Work\c#\Planted.Core.Security.Abstractions\obj\Debug\netstandard2.0\Planted.Core.Security.Abstractions.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.Core.Security.Abstractions\obj\Debug\netstandard2.0\Planted.Core.Security.Abstractions.AssemblyInfo.cs
+C:\Work\c#\Planted.Core.Security.Abstractions\bin\Debug\netstandard2.0\Planted.Core.Security.Abstractions.deps.json
+C:\Work\c#\Planted.Core.Security.Abstractions\bin\Debug\netstandard2.0\Planted.Core.Security.Abstractions.dll
+C:\Work\c#\Planted.Core.Security.Abstractions\bin\Debug\netstandard2.0\Planted.Core.Security.Abstractions.pdb
+C:\Work\c#\Planted.Core.Security.Abstractions\obj\Debug\netstandard2.0\Planted.Core.Security.Abstractions.dll
+C:\Work\c#\Planted.Core.Security.Abstractions\obj\Debug\netstandard2.0\Planted.Core.Security.Abstractions.pdb

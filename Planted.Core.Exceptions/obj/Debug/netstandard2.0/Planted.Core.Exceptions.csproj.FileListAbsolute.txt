@@ -1,0 +1,7 @@
+C:\Work\c#\Planted.Core.Exceptions\bin\Debug\netstandard2.0\Planted.Core.Exceptions.deps.json
+C:\Work\c#\Planted.Core.Exceptions\bin\Debug\netstandard2.0\Planted.Core.Exceptions.dll
+C:\Work\c#\Planted.Core.Exceptions\bin\Debug\netstandard2.0\Planted.Core.Exceptions.pdb
+C:\Work\c#\Planted.Core.Exceptions\obj\Debug\netstandard2.0\Planted.Core.Exceptions.AssemblyInfoInputs.cache
+C:\Work\c#\Planted.Core.Exceptions\obj\Debug\netstandard2.0\Planted.Core.Exceptions.AssemblyInfo.cs
+C:\Work\c#\Planted.Core.Exceptions\obj\Debug\netstandard2.0\Planted.Core.Exceptions.dll
+C:\Work\c#\Planted.Core.Exceptions\obj\Debug\netstandard2.0\Planted.Core.Exceptions.pdb

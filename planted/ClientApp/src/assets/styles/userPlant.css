@@ -1,0 +1,22 @@
+.user-plant {
+    background-color: var(--primary-bg-color);
+}
+
+.user-plant .content .user-plant-header {
+    height: 200px;
+    position: relative;
+    width: 100%;
+}
+
+.user-plant .content .user-plant-header .user-plant-title {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #5a617563;
+}
+
+.user-plant .content .user-plant-header .user-plant-image {
+    height: 100%;
+    width: 100%;
+    background-color: var(--white);
+}

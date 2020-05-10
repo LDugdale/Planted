@@ -1,0 +1,38 @@
+.container .single-navigation {
+    height: 60px;
+    padding: 15px;
+    background-color: var(--primary-bg-color);
+    transition: all 0.3s;
+}
+
+.container .single-navigation.complete {
+    background-color: var(--white);
+}
+
+.container .single-navigation .nav-icon {
+    height: 60px;
+    width: 60px;
+}
+
+.container .single-navigation .next, .container .single-navigation .done {
+    float: right;
+    opacity: 0.2;
+    transition: opacity 0.3s;
+}
+
+.container .single-navigation .next.complete, .container .single-navigation .done.complete {
+    float: right;
+    opacity: 1;
+}
+
+.container .single-navigation .previous {
+    float: left;
+}
+
+.container .single-navigation .nav-icon .icon-wrapper svg {
+    fill: var(--black);
+}
+
+.container .single-navigation .nav-icon.done .icon-wrapper svg {
+    fill: var(--primary-color);
+}

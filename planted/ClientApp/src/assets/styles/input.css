@@ -1,0 +1,37 @@
+.input-wrapper {
+    width: 100%;
+    margin:20px 0;
+    position:relative;
+    display:inline-block;
+}
+
+.input-wrapper span {
+    padding:10px;
+    pointer-events: none;
+    position:absolute;
+    left:0;
+    top:0;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+}
+
+.input-wrapper input {
+    color: var(--black);
+    padding: 10px 0px;
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    border: 0px;
+    border-bottom: 1px solid var(--line-separator-color);
+    transition: all 0.3s;
+}
+
+.input-wrapper input:focus, .input-wrapper input:not(:placeholder-shown) {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.input-wrapper input:focus + span, .input-wrapper input:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-100%) translateX(-20px);
+}

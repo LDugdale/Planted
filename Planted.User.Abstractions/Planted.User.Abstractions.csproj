@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Planted.User.Data.Abstractions\Planted.User.Data.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

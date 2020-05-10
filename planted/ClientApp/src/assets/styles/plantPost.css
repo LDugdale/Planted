@@ -1,0 +1,47 @@
+.plant-post {
+    width: 100%;
+}
+
+.plant-post .plant-post-text {
+    width: 100%;
+    background-color: #ffffff7d;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.plant-post .post-icons .file-input .upload-image {
+    width: 2.5em;
+} 
+
+.plant-post .post-icons .file-input {
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--line-separator-color);
+    margin-bottom: 10px;
+}
+
+.plant-post .selected-images {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.plant-post .selected-images .selected-image {
+    width: 50%;
+    position: relative;
+}
+
+.plant-post .selected-images .selected-image .close {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 6px;
+    text-align: center;
+    width: 1em;
+}
+
+.plant-post .selected-images .selected-image > img {
+    width: 100%;
+}

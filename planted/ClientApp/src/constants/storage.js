@@ -1,0 +1,1 @@
+export const USER_PLANT_STORAGE = 'userPlants';
