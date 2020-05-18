@@ -11,7 +11,7 @@ namespace Planted.UserPlants.Data
 
         Task<UserPlantDto> GetUserPlantAsync(string userPlantId);
 
-        Task AddUserPlantActivity(UserPlantActivityDto userPlantActivity);
+        Task AddUserPlantActivityAsync(UserPlantActivityDto userPlantActivityDto, IEnumerable<UserPlantMediaDto> userPlantMediaDto);
 
     }
 }

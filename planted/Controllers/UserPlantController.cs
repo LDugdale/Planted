@@ -61,7 +61,7 @@ namespace Planted.Controllers
         }
 
         [HttpGet("[action]")]
-        public async Task<ActionResult<UserPlantDto>> GetUserPlant([FromQuery]string userPlantId)
+        public async Task<ActionResult<UserPlantResponseDto>> GetUserPlant([FromQuery]string userPlantId)
         {
             try
             {
@@ -100,7 +100,7 @@ namespace Planted.Controllers
                 return BadRequest(ExceptionMessage.Unexpected);
             }
         }
-
+         
         private async Task<T> BindFormDataToModelAsync<T>(FormValueProvider formValueProvider) where T : class, new()
         {
             var data = new T();

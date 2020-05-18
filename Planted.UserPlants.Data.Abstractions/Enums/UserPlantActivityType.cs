@@ -2,9 +2,10 @@
 {
     public enum UserPlantActivityType
     {
-        WaterActivity = 1,
-        FertiliserActivity = 2,
-        MeasureActivity = 3,
-        PostActivity = 4
+        Water = 1,
+        Feed = 2,
+        Repot = 3,
+        Mist = 4,
+        Rotate = 5
     }
 }

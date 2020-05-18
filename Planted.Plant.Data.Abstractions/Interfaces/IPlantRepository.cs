@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Planted.Plant.Data
 {
     public interface IPlantRepository
     {
-        List<PlantListItemDto> SearchPlants(string searchText);
+        List<PlantDto> SearchPlants(string searchText);
+
+        Task<PlantDto> GetPlantAsync(string plantId);
     }
 }

@@ -6,6 +6,8 @@ import { useAddUserPlantActivityStyles } from './addUserPlantActivityStyles';
 import { useHeaderStyles } from './headerStyles';
 import { useModalComponentStyles } from './addModalComponentStyles';
 import { useAddUserPlantStyles } from './addUserPlantStyles';
+import { useProfileStyles } from './addProfileStyles';
+import { useActivityStyles } from './addActivityStyles';
 
 export {
     useAuthenticationStyles,
@@ -16,4 +18,6 @@ export {
     useHeaderStyles,
     useModalComponentStyles,
     useAddUserPlantStyles,
+    useProfileStyles,
+    useActivityStyles,
 };

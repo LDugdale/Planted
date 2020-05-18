@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using System.Threading.Tasks;
 
 namespace Planted.User.Data
@@ -34,7 +35,25 @@ namespace Planted.User.Data
             return user;
         }
 
-        public async Task<UserDto> GetUserAsync(string emailAddress)
+        public async Task<UserDto> GetUserByIdAsync(string userId)
+        {
+            var userObjectId = ObjectId.Parse(userId);
+
+            var userDto = await _dbContext.Users.Find(x => x.Id.Equals(userObjectId)).Project(user =>
+                new UserDto
+                {
+                    Id = user.Id.ToString(),
+                    EmailAddress = user.EmailAddress,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Token = user.Token,
+                    Username = user.Username
+                }).SingleOrDefaultAsync();
+
+            return userDto;
+        }
+
+        public async Task<UserDto> GetUserByEmailAsync(string emailAddress)
         {
             var userDto = await _dbContext.Users.Find(x => x.EmailAddress == emailAddress).Project(user =>
                 new UserDto

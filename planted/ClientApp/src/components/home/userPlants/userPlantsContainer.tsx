@@ -4,7 +4,7 @@ import AddUserPlantActivityModal from '../../modals/addUserPlantActivity';
 import AddUserPlantModal from '../../modals/addUserPlant';
 import { userPlantService } from '../../../services'; 
 import UserPlantsGrid from './grid';
-import { UserPlant } from '../../../types/userPlant';
+import { UserPlantList } from '../../../types/userPlant';
 
 
 export interface UserPlantsContainerProps { 
@@ -14,9 +14,9 @@ export interface UserPlantsContainerProps {
 }
 
 interface UserPlantsContainerState {
-    userPlants: Array<UserPlant>,
+    userPlants: Array<UserPlantList>,
     isAddUserPlantActivityOpen: boolean,
-    userPlant: UserPlant,
+    userPlant: UserPlantList,
 }
 
 export default class UserPlantsContainer extends Component<UserPlantsContainerProps, UserPlantsContainerState> {
@@ -24,7 +24,7 @@ export default class UserPlantsContainer extends Component<UserPlantsContainerPr
     state: UserPlantsContainerState = {
         userPlants: [],
         isAddUserPlantActivityOpen: false,
-        userPlant: {} as UserPlant
+        userPlant: {} as UserPlantList
     };
 
     constructor(props: UserPlantsContainerProps){
@@ -42,13 +42,13 @@ export default class UserPlantsContainer extends Component<UserPlantsContainerPr
         this.setState({ userPlants: userPlants});
     }
 
-    handleAddUserPlantActivityOpen(userPlant: UserPlant) {
+    handleAddUserPlantActivityOpen(userPlant: UserPlantList) {
         this.setState({userPlant: userPlant});
         this.setState({ isAddUserPlantActivityOpen: true});
     };
     
     handleAddUserPlantActivityClose() {
-        this.setState({userPlant: {} as UserPlant});
+        this.setState({userPlant: {} as UserPlantList});
         this.setState({ isAddUserPlantActivityOpen: false});
     };
     

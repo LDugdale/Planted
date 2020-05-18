@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Planted.Exceptions;
 using Planted.Plant.Data;
-using Planted.UseCases.Abstractions;
+using Planted.UseCases;
 using System;
 using System.Collections.Generic;
 
@@ -22,7 +22,7 @@ namespace Planted.Controllers
         }
 
         [HttpPost("[action]")]
-        public ActionResult<List<PlantListItemDto>> Search([FromBody]string searchText)
+        public ActionResult<List<PlantDto>> Search([FromBody]string searchText)
         {
             try
             {

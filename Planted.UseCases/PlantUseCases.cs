@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Planted.Plant;
 using Planted.Plant.Data;
-using Planted.UseCases.Abstractions;
 
 namespace Planted.UseCases
 {
@@ -16,7 +15,7 @@ namespace Planted.UseCases
             _plantService = plantService ?? throw new ArgumentNullException(nameof(plantService));
         }
 
-        public IUseCaseResult<List<PlantListItemDto>> SearchPlants(string searchText)
+        public IUseCaseResult<List<PlantDto>> SearchPlants(string searchText)
         {
             var plants = _plantService.SearchPlants(searchText);
 

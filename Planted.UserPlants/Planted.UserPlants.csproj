@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Planted.Core.Storage.Abstractions\Planted.Core.Storage.Abstractions.csproj" />
     <ProjectReference Include="..\Planted.UserPlants.Abstractions\Planted.UserPlants.Abstractions.csproj" />
     <ProjectReference Include="..\Planted.UserPlants.Data.Abstractions\Planted.UserPlants.Data.Abstractions.csproj" />
   </ItemGroup>

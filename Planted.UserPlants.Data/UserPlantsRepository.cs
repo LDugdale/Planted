@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Planted.UserPlants.Data
@@ -51,23 +52,35 @@ namespace Planted.UserPlants.Data
                     Id = x.Id.ToString(),
                     Nickname = x.Nickname,
                     PlantId = x.PlantId,
-                    UserId = x.UserId
+                    UserId = x.UserId,
                 }).FirstOrDefaultAsync();
 
             return plant;
         }
 
-        public async Task AddUserPlantActivity(UserPlantActivityDto userPlantActivityDto)
+        public async Task AddUserPlantActivityAsync(UserPlantActivityDto userPlantActivityDto, IEnumerable<UserPlantMediaDto> userPlantMediaDto)
         {
-            //var userPlantActivity = new UserPlantActivity
-            //{
-            //    Id = userPlantActivityDto.Id,
-            //    UserId = userPlantActivityDto.UserId,
-            //    PlantId = userPlantActivityDto.PlantId,
-            //    ActivityType = userPlantActivityDto.ActivityType,
-            //    UserPlantId = userPlantActivityDto.UserPlantId,
-            //};
-            //await _dbContext.UserPlantActivity.InsertOneAsync(userPlantActivity);
+            var userPlantMedia = userPlantMediaDto.Select(x => new UserPlantMedia { 
+                PlantId = x.PlantId,
+                UserPlantId = x.UserPlantId,
+                FileName = x.FileName,
+                FilePath = x.FilePath,
+            });
+
+            var userPlantActivity = new UserPlantActivity
+            {
+                ActivityTypes = userPlantActivityDto.ActivityTypes,
+                PlantId = userPlantActivityDto.PlantId,
+                UserId = userPlantActivityDto.UserId,
+                UserPlantId = userPlantActivityDto.UserPlantId,
+                PostText = userPlantActivityDto.PostText,
+            };
+            
+            await _dbContext.UserPlantMedia.InsertManyAsync(userPlantMedia);
+
+            userPlantActivity.UserPlantMediaIds = userPlantMedia.Select(_ => _.Id.ToString()).ToList();
+
+            await _dbContext.UserPlantActivity.InsertOneAsync(userPlantActivity);
         }
     }
 }

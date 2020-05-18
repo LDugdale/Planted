@@ -9,5 +9,7 @@ namespace Planted.Core.Data
         IMongoCollection<T> GetCollection<T>();
 
         Task<T> TransactionAsync<T>(string collectionName, Func<IMongoCollection<T>, Task<T>> operations);
+
+        Task TransactionAsync<T>(string collectionName, Func<IMongoCollection<T>, Task> operations);
     }
 }

@@ -33,34 +33,34 @@ namespace Planted.Core.Storage
             throw new System.NotImplementedException();
         }
 
-        public Task SaveFile(ContainerDefinition containerDefinition, FileDefinition fileDefinition)
+        public async Task SaveFile(ContainerDefinition containerDefinition, FileDefinition fileDefinition)
         {
-            var path = Path.Combine(_storageSettings.FileRoot, containerDefinition.Path, fileDefinition.Name);
+            var directory = Path.Combine(_storageSettings.FileRoot, containerDefinition.Path);
 
-            if (File.Exists(path))
-            {
-                File.Delete(path);
-            }
+            Directory.CreateDirectory(directory);
 
-            using (var file = new FileStream(path, FileMode.CreateNew))
+            var path = Path.Combine(directory, fileDefinition.Name);
+
+            using (FileStream target = File.Create(path))
             {
-                await fileStream.CopyToAsync(fileDefinition.Data);
+                await target.WriteAsync(fileDefinition.Data, 0, fileDefinition.Data.Length);   
             }
         }
 
         public Task SaveFile(ContainerDefinition containerDefinition, FileDefinition fileDefinition, Stream fileStream)
         {
-            var path = Path.Combine(_storageSettings.FileRoot, containerDefinition.Name, fileDefinition.Path);
+            //var path = Path.Combine(_storageSettings.FileRoot, containerDefinition.Name, fileDefinition.Path);
 
-            if (File.Exists(path))
-            {
-                File.Delete(path);
-            }
+            //if (File.Exists(path))
+            //{
+            //    File.Delete(path);
+            //}
 
-            using (var file = new FileStream(path, FileMode.CreateNew))
-            {
-                await fileStream.CopyToAsync(file);
-            }
+            //using (var file = new FileStream(path, FileMode.CreateNew))
+            //{
+            //    await fileStream.CopyToAsync(file);
+            //}
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -1,5 +1,7 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Planted.Plant.Data
 {
@@ -13,13 +15,29 @@ namespace Planted.Plant.Data
             _dbContext = dbContext;
         }
 
-        public List<PlantListItemDto> SearchPlants(string searchText)
+        public async Task<PlantDto> GetPlantAsync(string plantId)
         {
-            //var filterDefinition = Builders<Tenant>.Filter.Where(< Build whatever filter you need here >);
+            var plantObjectId = ObjectId.Parse(plantId);
+
+            var result = await _dbContext.Plants
+                .Find(x => x.Id.Equals(plantObjectId))
+                .Project(plant => new PlantDto
+                {
+                    Id = plant.Id.ToString(),
+                    LatinName = plant.LatinName,
+                    Genus = plant.Genus,
+                    Names = plant.Names
+                }).FirstOrDefaultAsync();
+
+            return result;
+        }
+
+        public List<PlantDto> SearchPlants(string searchText)
+        {
             var filter = Builders<Plant>.Filter.Regex("LatinName", searchText);
             var result = _dbContext.Plants
                 .Find(filter)
-                .Project(plant => new PlantListItemDto
+                .Project(plant => new PlantDto
                 {
                     Id = plant.Id.ToString(),
                     LatinName = plant.LatinName,

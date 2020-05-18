@@ -1,12 +1,12 @@
 import React from 'react'
 import { useUserPlantStyles } from '../../../../theme/styles';
 import { GridList, GridListTile, Button, Card, CardActions, CardActionArea, CardMedia, CardContent, Typography, Link } from '@material-ui/core';
-import { UserPlant } from '../../../../types/userPlant';
+import { UserPlantList } from '../../../../types/userPlant';
 import { userPlantLinks } from '../../../../routing/links';
 
 export interface UserPlantsGridContainerProps {
-    userPlants: Array<UserPlant>,
-    onAddUserPlantActivityOpen: (userPlant: UserPlant) => void,
+    userPlants: Array<UserPlantList>,
+    onAddUserPlantActivityOpen: (userPlant: UserPlantList) => void,
 }
 
 const UserPlantsGridContainer: React.FC<UserPlantsGridContainerProps> = (props) => {
@@ -19,7 +19,7 @@ const UserPlantsGridContainer: React.FC<UserPlantsGridContainerProps> = (props) 
             cellHeight='auto'
             cols={2} 
         >
-            {props.userPlants.map((userPlant: UserPlant) => (
+            {props.userPlants.map((userPlant: UserPlantList) => (
                 <GridListTile>
                     <Card>
                     <CardActionArea>

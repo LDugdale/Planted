@@ -34,8 +34,9 @@ namespace Planted.Core.Data
                 throw new System.Exception("Can not access to db server.", ex);
             }
         }
+        
 
-        public IMongoCollection<T> GetCollection<T>() => _database.GetCollection<T>(typeof(T).Name.ToLower());
+        public IMongoCollection<T> GetCollection<T>() => _database.GetCollection<T>($"{typeof(T).Name.Substring(0, 1).ToLower() + typeof(T).Name.Substring(1)}s");
 
         public async Task<T> TransactionAsync<T>(string collectionName, Func<IMongoCollection<T>, Task<T>> operations)
         {
@@ -52,6 +53,34 @@ namespace Planted.Core.Data
                     await session.CommitTransactionAsync();
 
                     return value;
+
+                }
+                catch (PlantedException)
+                {
+                    await session.AbortTransactionAsync();
+                    throw;
+                }
+                catch (Exception)
+                {
+                    await session.AbortTransactionAsync();
+                    throw;
+                }
+            }
+        }
+
+        public async Task TransactionAsync<T>(string collectionName, Func<IMongoCollection<T>, Task> operations)
+        {
+
+            using (var session = _mongoClient.StartSession())
+            {
+                var userConnection = session.Client.GetDatabase(_databaseSettings.DatabaseName).GetCollection<T>(collectionName);
+                session.StartTransaction();
+
+                try
+                {
+                    await operations(userConnection);
+
+                    await session.CommitTransactionAsync();
 
                 }
                 catch (PlantedException)

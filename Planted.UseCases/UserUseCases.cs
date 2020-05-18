@@ -14,7 +14,7 @@ namespace Planted.UseCases
         public async Task<IUseCaseResult<UserDto>> SignUp(SignUpUserDto signUpUserDto)
         {
             // Check if user exists
-            var user = await _userService.GetUserAsync(signUpUserDto.EmailAddress);
+            var user = await _userService.GetUserByEmailAsync(signUpUserDto.EmailAddress);
             if (user != null)
             {
                 return UseCase.Fail<UserDto>(null, ResponseMessage.EmailExists);
@@ -37,7 +37,7 @@ namespace Planted.UseCases
         public async Task<IUseCaseResult<UserDto>> SignIn(SignInUserDto signInUserDto)
         {
             // Get User
-            var user = await _userService.GetUserAsync(signInUserDto.EmailAddress);
+            var user = await _userService.GetUserByEmailAsync(signInUserDto.EmailAddress);
             if (user == null)
             {
                 return UseCase.Fail<UserDto>(null, ResponseMessage.DetailsIncorrect);

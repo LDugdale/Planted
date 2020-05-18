@@ -20,9 +20,8 @@ namespace Planted.Core.Web
 
         private readonly IFileService _fileService;
 
-        public MultipartRequestHandler(FormOptions defaultFormOptions, IFileService fileService)
+        public MultipartRequestHandler(IFileService fileService)
         {
-            _defaultFormOptions = defaultFormOptions ?? throw new ArgumentNullException(nameof(defaultFormOptions));
             _fileService = fileService ?? throw new ArgumentNullException(nameof(fileService));
         }
 
@@ -53,11 +52,11 @@ namespace Planted.Core.Web
                     if (HasFileContentDisposition(contentDisposition))
                     {
                         var processedMedia = await _fileService.ProcessStreamedFileAsync(section, contentDisposition);
+
                         var mediaDto = new AddFileDto
                         {
-                            UnTrustedFileName = contentDisposition.FileName.Value,
-                            TrustedFileName = WebUtility.HtmlEncode(contentDisposition.FileName.Value),
                             File = processedMedia,
+                            FileExtension = Path.GetExtension(contentDisposition.FileName.Value),
                         };
                         media.Add(mediaDto);
 
@@ -93,7 +92,7 @@ namespace Planted.Core.Web
                 section = await reader.ReadNextSectionAsync();
             }
 
-            request.Body.Position = 0;
+            //request.Body.Position = 0;
 
             var formAccumulatorResults = formAccumulator.GetResults();
             var formValueProvider = new FormValueProvider(

@@ -1,8 +1,9 @@
 import { UserPlantActivityType } from './userPlantActivityType';
-import { UserPlant } from './userPlant';
 
 export interface UserPlantActivity {
-    userPlant: UserPlant,
-    userPlantActivityTypes: Array<UserPlantActivityType>
+    activityTypes: Array<UserPlantActivityType>
     postText: string,
+    userPlantId: string,
+    plantId: string
 }
+

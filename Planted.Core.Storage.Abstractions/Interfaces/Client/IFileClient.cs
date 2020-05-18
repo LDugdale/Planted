@@ -15,7 +15,9 @@ namespace Planted.Core.Storage
         Task<Stream> GetFile(ContainerDefinition containerDefinition, FileDefinition fileDefinition);
         
         Task<string> GetFileUrl(ContainerDefinition containerDefinition, FileDefinition fileDefinition);
-        
+
+        Task SaveFile(ContainerDefinition containerDefinition, FileDefinition fileDefinition);
+
         Task SaveFile(ContainerDefinition containerDefinition, FileDefinition fileDefinition, Stream fileStream);
     }
 }

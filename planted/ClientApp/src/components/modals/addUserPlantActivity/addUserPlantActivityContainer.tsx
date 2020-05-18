@@ -6,7 +6,7 @@ import ActivityType from './activityType';
 import MediaInfo from './types/mediaInfo';
 import { Container } from '@material-ui/core';
 import { userPlantService } from '../../../services';
-import { UserPlantActivity, UserPlantActivityType, UserPlant } from '../../../types/userPlant';
+import { UserPlantActivity, UserPlantActivityType, UserPlantList } from '../../../types/userPlant';
 
 
 const INITIAL_STATE: AddUserPlantActivityState = {
@@ -16,7 +16,7 @@ const INITIAL_STATE: AddUserPlantActivityState = {
   };
 
 export interface AddUserPlantActivityProps {
-    userPlant: UserPlant
+    userPlant: UserPlantList
     onActivityClose: () => void;
 };
 
@@ -49,12 +49,15 @@ export default class AddUserPlantActivityContainer extends Component<AddUserPlan
         const media = this.state.media.map(x => x.media);
 
         const activity: UserPlantActivity = {
-            userPlant: this.props.userPlant,
-            userPlantActivityTypes: activityTypes,
+            activityTypes: activityTypes,
             postText: this.state.postText,
+            plantId: this.props.userPlant.plantId,
+            userPlantId: this.props.userPlant.id,
         };
-        
-        userPlantService.addUserPlantActivity(media, activity);
+
+        await userPlantService.addUserPlantActivity(media, activity);
+
+        this.handleActivityClose();
     }
 
     handleActivityClose(){

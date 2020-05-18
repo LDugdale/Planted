@@ -17,5 +17,10 @@
         public const string UserIdRequired = "User id required.";
         public const string NicknameRequired = "Nickname required.";
 
+        public const string PlantNotFound = "Plant not found.";
+        public const string UserNotFound = "User not found.";
+        public const string UserPlantNotFound = "User plant not found.";
+
+
     }
 }

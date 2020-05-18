@@ -42,6 +42,7 @@ namespace Planted
 
             services.AddLogging();
 
+            services.RegisterUseCases();
             services.RegisterUser();
             services.RegisterPlant();
             services.RegisterUserPlants();
@@ -51,6 +52,7 @@ namespace Planted
             services.RegisterCoreDataSettings(Configuration);
             services.RegisterCoreWeb();
             services.RegisterCoreWebSettings(Configuration);
+            services.RegisterCoreStorage();
             services.RegisterCoreStorageSettings(Configuration);
 
             var tokenSettings = Configuration.GetSection(nameof(TokenSettings)).Get<TokenSettings>();

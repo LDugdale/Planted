@@ -1,5 +1,6 @@
 ﻿using Planted.Plant.Data;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Planted.Plant
 {
@@ -13,7 +14,12 @@ namespace Planted.Plant
             _plantRepository = plantRepository;
         }
 
-        public List<PlantListItemDto> SearchPlants(string searchText)
+        public async Task<PlantDto> GetPlantAsync(string plantId)
+        {
+            return await _plantRepository.GetPlantAsync(plantId);
+        }
+
+        public List<PlantDto> SearchPlants(string searchText)
         {
             return _plantRepository.SearchPlants(searchText);
         }

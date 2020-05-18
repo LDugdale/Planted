@@ -13,7 +13,7 @@ namespace Planted.Plant.Data
 
         public string Genus { get; set; }
 
-        public List<PlantNames> Names { get; set; }
+        public List<PlantNamesDto> Names { get; set; }
 
         public List<PlantInformation> Information { get; set; }
 

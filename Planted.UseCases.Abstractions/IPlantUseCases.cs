@@ -1,10 +1,10 @@
 ﻿using Planted.Plant.Data;
 using System.Collections.Generic;
 
-namespace Planted.UseCases.Abstractions
+namespace Planted.UseCases
 {
     public interface IPlantUseCases
     {
-        IUseCaseResult<List<PlantListItemDto>> SearchPlants(string searchText);
+        IUseCaseResult<List<PlantDto>> SearchPlants(string searchText);
     }
 }

@@ -11,7 +11,7 @@ namespace Planted.UseCases
 
         Task<IUseCaseResult<IEnumerable<UserPlantDto>>> GetUserPlantsAsync(string emailAddress);
 
-        Task<IUseCaseResult<UserPlantDto>> GetUserPlantAsync(string userPlantId);
+        Task<IUseCaseResult<UserPlantResponseDto>> GetUserPlantAsync(string userPlantId);
 
         Task<IUseCaseResult> AddUserPlantActivityAsync(AddUserPlantActivityDto addUserPlantActivity, List<AddFileDto> Files, string emailAddress);
     }

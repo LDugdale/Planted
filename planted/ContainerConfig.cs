@@ -7,6 +7,7 @@ using Planted.Core.Storage;
 using Planted.Core.Web;
 using Planted.Plant;
 using Planted.Plant.Data;
+using Planted.UseCases;
 using Planted.User;
 using Planted.User.Data;
 using Planted.UserPlants;
@@ -17,6 +18,13 @@ namespace Planted
 {
     public static class ContainerConfig
     {
+        public static void RegisterUseCases(this IServiceCollection services)
+        {
+            services.AddSingleton<IPlantUseCases, PlantUseCases>();
+            services.AddSingleton<IUserPlantUseCases, UserPlantUseCases>();
+            services.AddSingleton<IUserUseCases, UserUseCases>();
+        }
+
         public static void RegisterUser(this IServiceCollection services)
         {
             services.AddSingleton<IUserService, UserService>();
@@ -34,6 +42,7 @@ namespace Planted
         public static void RegisterUserPlants(this IServiceCollection services)
         {
             services.AddSingleton<IUserPlantService, UserPlantService>();
+            services.AddSingleton<IUserPlantActivityService, UserPlantActivityService>();
             services.AddSingleton<IUserPlantsRepository, UserPlantsRepository>();
             services.AddSingleton<IUserPlantsDbContext, UserPlantsDbContext>();
         }
@@ -94,8 +103,14 @@ namespace Planted
 
             services.AddSingleton<IFileUploadSettings>(sp =>
                 sp.GetRequiredService<IOptions<FileUploadSettings>>().Value);
+
+            //services.AddSingleton<IFileUploadSettings, FileUploadSettings>();
         }
 
+        public static void RegisterCoreStorage(this IServiceCollection services)
+        {
+            services.AddSingleton<IFileClient, LocalFileClient>();
+        }
 
         public static void RegisterCoreStorageSettings(this IServiceCollection services, IConfiguration configuration)
         {
@@ -104,6 +119,9 @@ namespace Planted
 
             services.AddSingleton<IStorageSettings>(sp =>
                 sp.GetRequiredService<IOptions<StorageSettings>>().Value);
+
+            //services.AddSingleton<IStorageSettings, StorageSettings>();
+
         }
     }
 }

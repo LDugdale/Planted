@@ -31,7 +31,7 @@ export const getUserPlant = async (userPlantId: string) => {
 export const addUserPlantActivity = async (media: Array<File>, activity: UserPlantActivity) => {
 
     let medias: any = {};
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < media.length; i++) {
         medias[`media${1}`] = media[i]
     }
 

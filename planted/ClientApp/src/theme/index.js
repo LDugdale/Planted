@@ -5,9 +5,8 @@ const primaryColor = '#739a5b'
 //#81aa68
 //#1c1c29
 const backgroundColor = '#DDE8D5'
-//#D6E5CC
-// #e7f1e4
-// e0ecdd
+// #f3f9ef
+// DDE8D5
 const transparentWhiteColor = '#ffffff9e'
 
 let theme = createMuiTheme({
@@ -74,6 +73,27 @@ let theme = createMuiTheme({
           width: '100%',
           position: 'fixed',
           bottom: 0,          
+        }
+      },
+      MuiAvatar: {
+        root: {
+          borderRadius: defaultTheme.spacing(2)
+        }
+      },
+      MuiListItem: {
+        root: {
+          paddingTop: 0,
+          paddingBottom: 0,
+        },
+        gutters: {
+          paddingLeft: defaultTheme.spacing(5),
+          paddingRight: defaultTheme.spacing(2),
+        }
+      },
+      MuiList: {
+        padding:{
+          paddingTop: 0,
+          paddingBottom: 0,
         }
       }
     }  

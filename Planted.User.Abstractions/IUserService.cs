@@ -7,6 +7,8 @@ namespace Planted.User
     {
         Task<UserDto> CreateUserAsync(SignUpUserDto signUpUser);
 
-        Task<UserDto> GetUserAsync(string emailAddress);
+        Task<UserDto> GetUserByIdAsync(string userId);
+
+        Task<UserDto> GetUserByEmailAsync(string emailAddress);
     }
 }
